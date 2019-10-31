@@ -6,14 +6,14 @@ paginate = 5
 [params]
   contentTypeName = "post"
   themeColor = "orange"
-  showMenuItems = 3
+  showMenuItems = 2
   fullWidthTheme = false
   centerTheme = true
 
 [languages]
   [languages.en]
-    title = "Logan Connolly"
-    subtitle = "A portfolio of projects"
+    title = "Portfolio"
+    subtitle = "A collection of projects"
     keywords = ""
     copyright = ""
     menuMore = "Show more"
@@ -21,7 +21,7 @@ paginate = 5
     readOtherPosts = "Read other posts"
 
     [languages.en.params.logo]
-      logoText = "Logan Connolly"
+      logoText = "Portfolio"
       logoHomeLink = "/"
 
     [languages.en.menu]
