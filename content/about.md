@@ -4,7 +4,7 @@ title = "About Me"
 
 # Hi there
 
-My name is Logan and I'm the author of this site. I made the website to introduce myself to those who do not know me and to showcase some of my work. The source code for the projects you can find on my [Github](https://github.com/logan-connolly).
+My name is Logan and I'm the author of this site. I made the website to introduce myself to those who do not know me and to showcase some of my work. The source code for the projects you can find on my [GitHub](https://github.com/logan-connolly).
 
 **Quick facts:**
 

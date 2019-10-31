@@ -3,7 +3,7 @@ title: "How did I get here?"
 ---
 
 
-## 2018-Present
+## 2018-
 
 - Moved to Frankfurt in 2018 to start at Capgemini as Data Science Consultant
 - Projects in Retail, Pharmaceutical and Public Sector
