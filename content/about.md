@@ -15,4 +15,4 @@ My name is Logan and I'm the author of this site. I made the website to introduc
 
 The online learning community has helped me so much on my journey towards learning programming and data science. So I thought it was only right to give something back.
 
-Feel free to get in-touch with me on [LinkedIn]((https://www.linkedin.com/in/loganconnolly/))
+Feel free to get in-touch with me on [LinkedIn]((https://www.linkedin.com/in/loganconnolly/)).
