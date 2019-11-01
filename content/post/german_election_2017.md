@@ -2,7 +2,7 @@
 title = "German Election 2017"
 date = "2017-10-12"
 author = "Logan Connolly"
-cover = "https://storage.cloud.google.com/portfolio_bucket_storage/static/img/german_election_2017/cover.jpg"
+cover = "https://storage.googleapis.com/portfolio_bucket_storage/static/img/german_election_2017/cover.jpg"
 description = "Does where you live determine how you vote?"
 +++
 
@@ -27,7 +27,7 @@ Thus, I used the second vote to get an idea of who different regions in Germany 
 
 It appears that voter turnout has increased over the past three election cycles. There appears to be a higher turnout in the southern states of Baden-Württemberg and Bayern.
 
-{{< image src="https://storage.cloud.google.com/portfolio_bucket_storage/static/img/german_election_2017/turnout.jpg" alt="Voter Turnout Map" position="center" style="border-radius: 8px;" >}}
+{{< image src="https://storage.googleapis.com/portfolio_bucket_storage/static/img/german_election_2017/turnout.jpg" alt="Voter Turnout Map" position="center" style="border-radius: 8px;" >}}
 
 
 # Voting Distribution by Party
@@ -37,7 +37,7 @@ It appears that voter turnout has increased over the past three election cycles.
 
 It turned out that where you live indeed plays a big role on who vote for. In these maps, you can see that *AfD* and *die LINKE* were highly concentrated in the former DDR, while *die GRÜNE* has a large presence in former West Germany.
 
-{{< image src="https://storage.cloud.google.com/portfolio_bucket_storage/static/img/german_election_2017/distribution.jpg" alt="Voter Distribution Maps" position="center" style="border-radius: 8px;" >}}
+{{< image src="https://storage.googleapis.com/portfolio_bucket_storage/static/img/german_election_2017/distribution.jpg" alt="Voter Distribution Maps" position="center" style="border-radius: 8px;" >}}
 
 
 #### plot box-plots to see the distribution of individual districts
@@ -46,7 +46,7 @@ The points in the box plots are markers for each district, while the box aspect 
 
 On the contrary, *FDP* has a similar median as *AfD*, but *FDP* has low variation among districts while *AfD* has very high variation and a handful of big outliers. Notice how *die LINKE* also has its share of outliers.
 
-{{< image src="https://storage.cloud.google.com/portfolio_bucket_storage/static/img/german_election_2017/boxplots.jpg" alt="Voter Box Plot by Party" position="center" style="border-radius: 8px;" >}}
+{{< image src="https://storage.googleapis.com/portfolio_bucket_storage/static/img/german_election_2017/boxplots.jpg" alt="Voter Box Plot by Party" position="center" style="border-radius: 8px;" >}}
 
 
 #### plot the voting results for each state
@@ -55,7 +55,7 @@ These bar charts show how voting for individual parties were distributed among d
 
 Berlin proves to be a very diverse place to live politically (makes sense). Also, *AfD* in Sachsen is on par with *CDU-CSU*, which must have been a surprise in this past election.
 
-{{< image src="https://storage.cloud.google.com/portfolio_bucket_storage/static/img/german_election_2017/barchart.jpg" alt="Barchart by State" position="center" style="border-radius: 8px;" >}}
+{{< image src="https://storage.googleapis.com/portfolio_bucket_storage/static/img/german_election_2017/barchart.jpg" alt="Barchart by State" position="center" style="border-radius: 8px;" >}}
 
 
 # Conclusion
