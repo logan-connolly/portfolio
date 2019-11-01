@@ -3,7 +3,7 @@ title = "German Election 2017"
 date = "2017-10-12"
 author = "Logan Connolly"
 cover = "img/german_election_2017/cover.jpg"
-description = "Does where you live play role in who you'll vote for?"
+description = "Does where you live determine how you vote?"
 +++
 
 ***
