@@ -2,7 +2,7 @@
 title = "State of the Union Address"
 date = "2017-09-15"
 author = "Logan Connolly"
-cover = "https://storage.googleapis.com/portfolio_bucket_storage/static/img/state_of_union/cover.jpg"
+cover = "img/state_of_union/cover.jpg"
 description = "What do presidents really say during the State of the Union?"
 +++
 
@@ -18,7 +18,7 @@ I gathered data from 1980 to 2017 from the [American Presidency Project](http://
 
 The first thing I want to look at is who is the chattiest out of the presidents. It appears that Bill Clinton and Barack Obama have consistently longer addresses than the other presidents. It is perhaps interesting to note that they are the only two Democratic Presidents in the data.
 
-{{< image src="https://storage.googleapis.com/portfolio_bucket_storage/static/img/state_of_union/wordcount.jpg" alt="Word Count Bar Chart" position="center" style="border-radius: 8px;" >}}
+{{< image src="img/state_of_union/wordcount.jpg" alt="Word Count Bar Chart" position="center" style="border-radius: 8px;" >}}
 
 
 # Term Frequency Inverse Document Frequency
@@ -29,7 +29,7 @@ In this part of our analysis, we are going to use tf-idf in order to derive the 
 
 With *tf-idf* calculated for each word grouped by president, we can plot the top words for each President. By doing so, we should be able to identify topics that were particularly important to for a given Presidency.
 
-{{< image src="https://storage.googleapis.com/portfolio_bucket_storage/static/img/state_of_union/tf_idf.jpg" alt="tf-idf for each Presidency" position="center" style="border-radius: 8px;" >}}
+{{< image src="img/state_of_union/tf_idf.jpg" alt="tf-idf for each Presidency" position="center" style="border-radius: 8px;" >}}
 
 Some of the words that appear in the plots seem to be obvious like Sadam Hussein which appears in both Bush Presidencies or the large prevalence of ISIL in Obama’s term.
 
@@ -45,4 +45,4 @@ Let’s take a look at two recent addresses that we expect to draw relatively hi
 
 Can you tell which wordcloud belongs to which event?
 
-{{< image src="https://storage.googleapis.com/portfolio_bucket_storage/static/img/state_of_union/wordcloud.jpg" alt="Negative Sentiment Wordcloud" position="center" style="border-radius: 8px;" >}}
+{{< image src="img/state_of_union/wordcloud.jpg" alt="Negative Sentiment Wordcloud" position="center" style="border-radius: 8px;" >}}
