@@ -48,4 +48,4 @@ Can you tell which wordcloud belongs to which event?
 
 A | B
 :-:|:-:
-![](/img/state_of_union/wordcloud2.png) | ![](/img/state_of_union/wordcloud1.png)
+![](/img/state_of_union/wordcloud1.png) | ![](/img/state_of_union/wordcloud2.png)
