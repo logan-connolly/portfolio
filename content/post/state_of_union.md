@@ -45,4 +45,7 @@ Let’s take a look at two recent addresses that we expect to draw relatively hi
 
 Can you tell which wordcloud belongs to which event?
 
-{{< image src="/img/state_of_union/wordcloud.jpg" alt="Negative Sentiment Wordcloud" position="center" style="border-radius: 8px;" >}}
+
+A | B
+:-:|:-:
+![](/img/state_of_union/wordcloud2.png) | ![](/img/state_of_union/wordcloud1.png)
