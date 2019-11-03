@@ -24,7 +24,7 @@ I concentrated primarily on the **second vote** because according to Wikipedia, 
 
 It appears that voter turnout has increased over the past three election cycles. There appears to be a higher turnout in the southern states of Baden-Württemberg and Bayern.
 
-{{< image src="/img/german_election_2017/turnout.jpg" alt="Voter Turnout Map" position="center" style="border-radius: 8px;" >}}
+{{< image src="/img/german_election_2017/turnout.png" alt="Voter Turnout Map" position="center" style="border-radius: 8px;" >}}
 
 
 # Voting Distribution by Party
