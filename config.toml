@@ -2,6 +2,7 @@ baseurl = "/"
 languageCode = "en-us"
 theme = "terminal"
 paginate = 5
+disqusShortname = "loganconnolly-com"
 
 [params]
   contentTypeName = "post"
