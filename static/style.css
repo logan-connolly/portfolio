@@ -18,7 +18,7 @@ img[data-action="zoom"] {
   }
   .zoom-overlay {
     z-index: 420;
-    background: #fff;
+    background: #000;
     position: fixed;
     top: 0;
     left: 0;
@@ -39,4 +39,3 @@ img[data-action="zoom"] {
   .zoom-overlay-transitioning {
     cursor: default;
   }
-  
