@@ -2,3 +2,7 @@
 To add an extended head section, please create
 `layouts/partials/extended_head.html` in your Hugo directory.
 -->
+<!-- Custom CSS to override theme properties (/static/style.css) -->
+{{ if (fileExists "static/zoom.css") -}}
+  <link rel="stylesheet" href="{{ "zoom.css" | absURL }}">
+{{- end }}
