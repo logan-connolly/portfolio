@@ -57,7 +57,10 @@
     </div>
   </div>
   {{ end }}
-
-  {{ partial "comments.html" . }}
+  {{ with eq .Params.disqus false }}
+    <div></div>
+  {{ else }}
+    {{ partial "comments.html" . }}
+  {{ end }}
 </div>
 {{ end }}

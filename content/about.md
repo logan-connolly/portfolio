@@ -1,5 +1,6 @@
 +++
 title = "About Me"
+disqus = false
 +++
 
 # Hi there

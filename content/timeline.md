@@ -1,6 +1,7 @@
----
-title: "How did I get here?"
----
++++
+title = "How did I get here?"
+disqus = false
++++
 
 
 ## 2018-
