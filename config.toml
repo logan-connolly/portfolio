@@ -2,7 +2,7 @@ baseurl = "/"
 languageCode = "en-us"
 theme = "hugo-theme-terminal"
 paginate = 5
-disqusShortname = "loganconnolly-com"
+disqusShortname = "logan__connolly"
 
 [params]
   contentTypeName = "post"
