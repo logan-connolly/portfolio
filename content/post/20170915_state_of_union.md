@@ -1,8 +1,7 @@
 +++
 title = "State of the Union Address"
 date = "2017-09-15"
-author = "Logan Connolly"
-cover = "/img/state_of_union/cover.jpg"
+tags = ["r", "analysis", "visualization"]
 description = "What do presidents really say during the State of the Union?"
 +++
 
