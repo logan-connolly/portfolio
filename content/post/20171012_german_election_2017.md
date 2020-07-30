@@ -1,5 +1,6 @@
 +++
 title = "German Election 2017"
+author = "Logan Connolly"
 date = "2017-10-12"
 tags = ["r", "analysis", "visualization"]
 description = "Does where you live determine how you vote?"
