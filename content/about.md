@@ -5,7 +5,7 @@ disqus = false
 
 ### Hi there
 
-My name is Logan and I'm the author of this site. I made the website to introduce myself to those who do not know me and to showcase some of my work. The source code for the projects can be found on my [{{< fa fab github >}}](https://github.com/logan-connolly) 
+My name is Logan and I'm the author of this site. I made the website to introduce myself to those who do not know me and to showcase some of my work. The source code for the projects can be found on [{{< fa fab github >}}](https://github.com/logan-connolly)
 
 ### Quick facts
 
@@ -16,4 +16,4 @@ My name is Logan and I'm the author of this site. I made the website to introduc
 
 ### Why the website?
 
-The online learning community has helped me so much on my journey towards learning programming and data science. So I thought it would be good to give back. Feel free to get in-touch with me on [{{< fa fab linkedin >}}]((https://www.linkedin.com/in/loganconnolly/)) 
+The online learning community has helped me so much on my journey towards learning programming and data science. So I thought it would be good to give back. Feel free to get in-touch with me [{{< fa fab linkedin >}}]((https://www.linkedin.com/in/loganconnolly/))

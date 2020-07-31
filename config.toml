@@ -13,16 +13,16 @@ disqusShortname = "logan__connolly"
 
 [languages]
   [languages.en]
-    title = "Portfolio"
-    subtitle = "A collection of projects"
+    title = "Logan Connolly"
+    subtitle = "Portfolio"
     keywords = ""
-    copyright = ""
+    copyright = "Logan Connolly"
     menuMore = "Show more"
-    readMore = "Read more"
+    readMore = "more"
     readOtherPosts = "Read other posts"
 
     [languages.en.params.logo]
-      logoText = "Portfolio"
+      logoText = "Posts"
       logoHomeLink = "/"
 
     [languages.en.menu]

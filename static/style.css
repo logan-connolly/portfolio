@@ -2,3 +2,15 @@
   margin: 0px auto;
   padding: 0px 0;
 }
+
+.post-tags {
+  margin-bottom: 0px;
+}
+
+.post-content {
+  margin-top: 0px;
+}
+
+a.read-more.button {
+  color: #23b0ff;
+}
