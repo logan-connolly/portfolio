@@ -1,5 +1,6 @@
 +++
 title = "State of the Union Address"
+author = "Logan Connolly"
 date = "2017-09-15"
 tags = ["r", "analysis", "visualization"]
 description = "What do presidents really say during the State of the Union?"

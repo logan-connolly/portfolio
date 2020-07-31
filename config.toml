@@ -7,25 +7,29 @@ disqusShortname = "logan__connolly"
 [params]
   contentTypeName = "post"
   themeColor = "blue"
-  showMenuItems = 2
+  showMenuItems = 4
   fullWidthTheme = false
   centerTheme = true
 
 [languages]
   [languages.en]
-    title = "Portfolio"
-    subtitle = "A collection of projects"
+    title = "Logan Connolly"
+    subtitle = "Portfolio"
     keywords = ""
-    copyright = ""
+    copyright = "Logan Connolly"
     menuMore = "Show more"
-    readMore = "Read more"
+    readMore = "more"
     readOtherPosts = "Read other posts"
 
     [languages.en.params.logo]
-      logoText = "Portfolio"
+      logoText = "Posts"
       logoHomeLink = "/"
 
     [languages.en.menu]
+      [[languages.en.menu.main]]
+        identifier = "projects"
+        name = "Projects"
+        url = "/projects"
       [[languages.en.menu.main]]
         identifier = "about"
         name = "About"
