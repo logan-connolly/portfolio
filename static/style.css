@@ -8,9 +8,11 @@
 }
 
 .post-content {
-  margin-top: 0px;
+  display: inline-flex;
+  margin: 10px auto;
 }
 
 a.read-more.button {
+  margin: 0px auto;
   color: #23b0ff;
 }
