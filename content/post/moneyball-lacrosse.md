@@ -6,7 +6,6 @@ keywords = ["python", "ai", "data science", "selenium", "plotly"]
 tags = ["python", "selenium", "plotly", "statsmodels"]
 description = "Is there a competive advantage to be had using statistics?"
 +++
-{{< load-plotly >}}
 
 # Introduction
 
@@ -96,6 +95,7 @@ model = sm.OLS(y, X).fit()
 
 For those who are not familiar with an OLS model, it basically fits a straight line to the data where the errors are the smallest. You can see the model plotted on the training data below:
 
+{{< load-plotly >}}
 {{< plotly json="/plotly/moneyball_lacrosse/model_plot_train.json" height="400px" >}}
 
 As you can see, the model does a pretty decent job at predicting wins in the plot, but we can even get a more detailed view of its performance by looking at the `model.summary()`:
