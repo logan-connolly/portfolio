@@ -15,18 +15,19 @@ From a bird's eye view, the basic application architecture looks like:
 
 ![](/img/mychef_overview/basic_architecture.png)
 
+# Tools
 
 General:
 
 * [Docker](https://www.docker.com/): for containerization of microservices
 * [PostgreSQL](https://www.postgresql.org/): relational database for storing recipe information
 * [Scrapy](https://scrapy.org/): a python library for scraping recipes from websites
-* [MeiliSearch](https://docs.meilisearch.com/) batteries included search engine developed in Rust
 
 API:
 
 * [FastAPI](https://fastapi.tiangolo.com/): a python async api framework that is fast and super easy to use
 * [Spacy](https://spacy.io/): a python library for nlp that comes with a bunch of great pre-trained language models
+* [MeiliSearch](https://docs.meilisearch.com/) batteries included search engine developed in Rust
 
 UI:
 
