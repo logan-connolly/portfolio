@@ -8,7 +8,8 @@ disqus = false
 MyChef is an application that helps you decide what meal to make. By entering into the application the ingredients that you have at home, mychef offers recommendations based on recipes that it's extracted from the web. Techstack:
 
 - {{< fa fab python >}}: FastAPI, Spacy, Scrapy
-- {{< fa fab vuejs >}}: Vue, Vuetify
+- {{< fa fab vuejs >}}: Nuxt, Vuetify
+- {{< fa fab rust >}}: MeiliSearch
 - {{< fa fab docker >}}: Docker
 - {{< fa database >}}: PostgreSQL
 
