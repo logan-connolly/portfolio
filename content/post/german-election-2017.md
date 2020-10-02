@@ -1,8 +1,9 @@
 +++
 title = "German Election 2017"
-date = "2017-10-12"
 author = "Logan Connolly"
-cover = "/img/german_election_2017/cover.jpg"
+date = "2017-10-12"
+keywords = ["r", "geospatial analyis", "germany", "election"]
+tags = ["r", "geospatial", "visualization"]
 description = "Does where you live determine how you vote?"
 +++
 
@@ -18,7 +19,7 @@ The dataset deals with the German 2017 Election Results and how votes were distr
 
 I concentrated primarily on the **second vote** because according to Wikipedia, it is the more important vote:
 
-> For the distribution of seats in the German Bundestag, the second vote is more important than the first vote. This second vote allows the elector to vote for a party whose candidates are put together on the regional electoral list. [Wiki]
+> For the distribution of seats in the German Bundestag, the second vote is more important than the first vote. This second vote allows the elector to vote for a party whose candidates are put together on the regional electoral list. [[Wiki]](https://en.wikipedia.org/wiki/Electoral_system_of_Germany)
 
 # Voter Turnout
 
@@ -30,14 +31,14 @@ It appears that voter turnout has increased over the past three election cycles.
 # Voting Distribution by Party
 
 
-#### plot the distribution on the map by district
+#### Distribution by regions
 
 It turns out that where you live indeed plays a role in who you vote for. In these maps, you can see that *AfD* and *die LINKE* were highly concentrated in the former DDR, while *die GRÜNE* has a large presence in former West Germany.
 
 {{< image src="/img/german_election_2017/distribution.jpg" alt="Voter Distribution Maps" position="center" style="border-radius: 8px;" >}}
 
 
-#### plot box-plots to see the distribution of individual districts
+#### Distribution of individual districts
 
 The points in the box plots are markers for each district, while the box aspect portrays how narrow or wide the distribution is. From looking at the plot, *AfD* and *die Linke* have many outliers. 
 
@@ -46,7 +47,7 @@ On the contrary, *FDP* has a similar median as *AfD*, but *FDP* has low variatio
 {{< image src="/img/german_election_2017/boxplots.jpg" alt="Voter Box Plot by Party" position="center" style="border-radius: 8px;" >}}
 
 
-#### plot the voting results for each state
+#### Voting results for each state
 
 These bar charts show how voting for individual parties were distributed among different states (Bundesländer). In most states, *CDU-CSU* dominates the vote; however, that is not always the case. 
 
