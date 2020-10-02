@@ -17,16 +17,19 @@ From a bird's eye view, the basic application architecture looks like:
 
 
 General:
+
 * [Docker](https://www.docker.com/): for containerization of microservices
 * [PostgreSQL](https://www.postgresql.org/): relational database for storing recipe information
 * [Scrapy](https://scrapy.org/): a python library for scraping recipes from websites
 * [MeiliSearch](https://docs.meilisearch.com/) batteries included search engine developed in Rust
 
 API:
+
 * [FastAPI](https://fastapi.tiangolo.com/): a python async api framework that is fast and super easy to use
-* [Spacy](https://spacy.io/): a python library for nlp that comes with a bunch of great pretrained models
+* [Spacy](https://spacy.io/): a python library for nlp that comes with a bunch of great pre-trained language models
 
 UI:
+
 * [Nuxt](https://nuxtjs.org/): a js framework built on [Vue](https://vuejs.org/) for creating reactive sites with server side rendering 
 * [Vuetify](https://vuetifyjs.com/en/): bootstrap like js framework for creating pretty components
 
