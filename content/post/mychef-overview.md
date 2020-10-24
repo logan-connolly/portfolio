@@ -2,8 +2,8 @@
 title = "MyChef Recipe Recommender"
 date = "2020-10-02"
 author = "Logan Connolly"
-keywords = ["python", "vue", "meilisearch", "docker", "scrapy", "postgresql"]
-tags = ["python", "vue", "meilisearch", "docker", "scrapy", "postgresql"]
+keywords = ["python", "vue", "scrapy", "spacy"]
+tags = ["python", "vue", "scrapy", "spacy"]
 description = "App that tells you what to make based on what you have in the kitchen"
 +++
 
