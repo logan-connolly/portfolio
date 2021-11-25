@@ -11,8 +11,7 @@ My name is Logan and I'm the author of this site. I made the website to introduc
 
 - self-taught programmer
 - from the USA, but living in Germany since 2016
-- work as Data Science Consultant at Capgemini since 2018
-- enjoy playing Catan, reading Dostoevsky, listening to Skegss, tuning into *Fest und Flauschig*, among other things
+- work as a Software Engineer at Capgemini since 2018
 
 ### Why the website?
 

@@ -6,7 +6,7 @@ disqus = false
 
 ## 2018-
 
-- Moved to Frankfurt in 2018 to start at Capgemini as Data Science Consultant
+- Moved to Frankfurt in 2018 to begin my career at Capgemini
 - Projects in Retail, Pharmaceutical and Public Sector
 
 ## 2016-18
