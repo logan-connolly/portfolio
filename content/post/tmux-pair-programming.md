@@ -111,6 +111,7 @@ init_ngrok_session() {
 
 ngrok_status() {
   echo "Checking to see if ngrok session is running ..."
+  ngrok_url=http://localhost:4040/api/tunnels
 
   while [ "$url" == "" ] || [ "$url" == "null" ]
   do
@@ -118,7 +119,7 @@ ngrok_status() {
     echo "Sleeping for 5 seconds and then retrying..."
     echo
     sleep 5
-    url=$(curl http://localhost:4040/api/tunnels 2>/dev/null | jq -r .tunnels[0].public_url)
+    url=$(curl $ngrok_url 2>/dev/null | jq -r .tunnels[0].public_url)
   done
 
   host=$(echo "$url" | cut -d / -f 3 | cut -d : -f 1)
