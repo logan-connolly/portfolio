@@ -91,3 +91,4 @@ typings/
 
 # Public directory will be rendered
 public/
+.hugo_build.lock
