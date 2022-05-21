@@ -1,5 +1,5 @@
 +++
-title = "Remote Pair Programming with TMUX"
+title = "Remote Pair Programming"
 author = "Logan Connolly"
 date = "2022-05-20"
 keywords = ["tmux", "ngrok", "pair-programming", "neovim"]
@@ -74,12 +74,13 @@ So now that we have access to the project's source code, let's first login as th
 
 Once we are logged in, we should clone your configuration files (or sync them from other user). For my dotfiles it looks like this:
 
-```shell
+{{< code language="bash" title="Clone dotfiles" id="1" expand="Show" collapse="Hide" isCollapsed="false" >}}
 git clone https://github.com/logan-connolly/dotfiles
 cd dotfiles
 make symlink      # create symbolic links to user's home directory
 make paq-install  # install neovim plugins
-```
+{{< /code >}}
+
 After this, you should be able to log out (`$ exit`) and back in (`$ su pair`) after which you will be greeted with your configured terminal.
 
 > **NOTE**: What's great about making use of system user management as opposed to creating a new virtual environment, is that you still have access to your system dependencies like git, python, etc. So when you clone your dependencies, you only need to run your configuration sync.
@@ -100,7 +101,7 @@ Your ssh server is running, but what link do you share? This is where Ngrok come
 
 In the source article, `callisto13` uses a nice little script to create this connection; I have adapted it slightly here, but the results should be the same:
 
-```shell
+{{< code language="bash" title="Start ngrok session" id="2" expand="Show" collapse="Hide" isCollapsed="false" >}}
 #!/bin/bash
 
 init_ngrok_session() {
@@ -131,7 +132,8 @@ ngrok_status() {
 
 init_ngrok_session
 ngrok_status
-```
+{{< /code >}}
+
 We want to add this script to a path that _pair_ will have access to:
 
 ```shell
