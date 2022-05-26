@@ -19,19 +19,18 @@ The source of inspiration was this excellent [article](https://cbctl.dev/blog/re
 
 # Why another article
 
-The goal of this article is to go into a bit more detail, particularly how to set up your system to make sure that the person you are pairing with has _limited access_ to your system - ideally they should only have access to the project you are working on.
+The goal of this article is to go into a bit more detail, particularly how to set up your system to make sure that the person you are pairing with has _limited access_ - ideally they should only have access to the project you are working on.
 
 # Birds eye view
 
 Here is a high-level overview of what we will cover:
 
 1. Prerequisites
-2. User creation
-3. Get project code
-4. Clone dotfiles
-5. Setup and start ssh server
-6. Setup and start ngrok
-7. Wrap up
+1. User creation
+1. Clone dotfiles
+1. Setup and start ssh server
+1. Setup and start ngrok
+1. Wrap up
 
 # Prerequisites
 
@@ -56,16 +55,6 @@ Then add a password for this user with:
 > **NOTE**: this does not mean that the user will not have any privileges! It all depends on how you have your system setup up, but generally this user should not have write/execute permissions on your files, but may have read... Since the user is not of the same group, you could restrict read access by setting your files to `640`. Here is a snippet for changing the permissions for all files in a specific file path: `find <path> -type f -exec chmod 640 {} +
 `
 
-# Get project code
-
-Now that we have a limited user named _pair_, we can sync our project to its home directory. You can do this by either syncing the directory from your other user, like so:
-
-`$ sudo rsync -av --chown=pair:pair --delete /path/to/cool-project/ /home/pair/cool-project`
-
-Or just by cloning it from a remote repository:
-
-`$ git clone https://github.com/team/cool-project`
-
 # Clone dotfiles
 
 So now that we have access to the project's source code, let's first login as the newly created _pair_ user:
@@ -77,7 +66,7 @@ Once we are logged in, we should clone your configuration files (or sync them fr
 {{< code language="bash" title="Clone dotfiles" id="1" expand="Show" collapse="Hide" isCollapsed="false" >}}
 git clone https://github.com/logan-connolly/dotfiles
 cd dotfiles
-make symlink      # create symbolic links to user's home directory
+make links        # create symbolic links
 make paq-install  # install neovim plugins
 {{< /code >}}
 
@@ -91,9 +80,13 @@ It is now time to give your colleague access to your machine and login as the _p
 
 Once it is installed, you should configure the server settings to prevent users from logging in with password. You can do this by adding `PasswordAuthentication no` to the bottom of the `/etc/ssh/sshd_config` file.
 
-Once your ssh server is configured, start it with `$ sudo systemctl start sshd`. The openssh server should be running on your system and will accept only users with public keys that are stored in `/home/pair/.ssh/authorized_keys`. Have your colleague send over there preferred public key and store it in that file.
+Once your ssh server is configured, start it with `$ sudo systemctl start sshd`. The openssh server should now be running on your system.
 
 > **NOTE**: the server will continue running for the remainder of the time you are logged in. To manually disable it, run `$ sudo systemctl stop sshd`.
+
+The server will only login to the user `pair` if your friend's public key is present in this file: `/home/pair/.ssh/authorized_keys`. Have your colleague send over there preferred public key and store it in that file.
+
+> **NOTE**: make sure that you create this file as the _pair_ user or at least set the permissions afterwards with `$ chown pair:pair /home/pair/.ssh/authorized_keys`. Otherwise, ssh will not be able to read the file.
 
 # Initialize ngrok ssh tunnel
 
@@ -144,9 +137,11 @@ sudo vim /usr/local/bin/start-rpp
 sudo chmod +x /usr/local/bin/start-rpp
 ```
 
-Now log into _pair_ (`$ su pair`) and run script `$ start-rpp`. You should get some feed back saying which command to send your friend.
+Now that we have a script for bridging the connection with ngrok, there is only three things left to do:
 
-> **NOTE**: You may get a permission denied error if you are running a tmux session with your normal system user.
+1. Now log into _pair_ (`$ su pair`)
+1. Configure ngrok `$ ngrok config add-authtoken <your-auth-token>` (you can find your auth token by logging into ngrok dashboard)
+1. Run script `$ start-rpp`. You should get a response saying which command to send your friend.
 
 # Wrap up
 
